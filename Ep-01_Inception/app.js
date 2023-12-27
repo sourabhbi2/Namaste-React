@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom"
 /*
     I want to create nested element lke below.
 
@@ -14,7 +16,8 @@
 
 */
 
-    const parent = React.createElement(
+   
+const parent = React.createElement(
         "div",
         {id: 'parent'},
         [React.createElement(
