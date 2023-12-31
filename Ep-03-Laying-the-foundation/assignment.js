@@ -126,7 +126,7 @@ return(
             placeholder="Search anything you want..."
           />
           <button type="submit">
-            <i class="fa fa-search"></i>
+           Search <i className="fa fa-search"></i>
           </button>
         </div>
         <div className="right">

@@ -36,6 +36,7 @@
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
+    justify-content: space-between;
   }
   button:hover {
     background-color: green;
