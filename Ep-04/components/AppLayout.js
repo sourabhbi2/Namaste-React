@@ -8,7 +8,7 @@ import Body from './Body';
 
 /* const styleCard = {
     backgroundColor: '#f0f0f0'
-} */ //we can add css like this 
+}  we can add css like this */
 
 
 /* HW - config driven api ?
