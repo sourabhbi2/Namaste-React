@@ -1,27 +1,28 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
     border-radius: 5px;
 }
 
-img{
+img {
     width: 150px;
 }
 
 
 
-.nav-items > ul{
+.nav-items>ul {
     font-size: 20px;
     display: flex;
     list-style-type: none;
 }
-.nav-items > ul > li{
+
+.nav-items>ul>li {
     padding: 10px;
     margin: 10px;
 }
 
-.res-card{
+.res-card {
     padding: 2px;
     width: 200px;
     height: auto;
@@ -29,24 +30,29 @@ img{
     background-color: #f0f0f0;
 }
 
-.res-card:hover{
+.res-card:hover {
     border: 1px solid black;
     cursor: pointer;
 }
-.res-container{
+
+.res-container {
     display: flex;
     flex-wrap: wrap;
     margin: 2px;
     padding: 2px;
 }
 
-.res-logo{
-    
-    
+.res-logo {
+
     width: 199px;
     height: 124px;
 }
 
-.search{
+.search {
     padding: 10px;
+}
+
+.filter-btn {
+    margin: 10px;
+    cursor: pointer;
 }
