@@ -8,7 +8,9 @@ import restList from '../utils/mockData';
 const Body = () =>{
     return(
         <div className='body'>
-            <div className='search'>Search</div>
+            <div className='filter'>
+                <button className='filter-btn'>Top Rated Restaurant</button>
+                </div>
             <div className='res-container'>
                {restList.map((rest) =>(
 
