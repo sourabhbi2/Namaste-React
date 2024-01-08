@@ -27,7 +27,7 @@ const Header = () => {
 const RestroCard = (props) =>{
 
     const {restData} = props;
-    const {name, cuisines, costForTwo, deliveryTime, avgRating} = restData?.data;
+    const {name, cuisines, costForTwo, deliveryTime, avgRating, cloudinaryImageId} = restData?.data;
 
     return(
         <div className='res-card'>
@@ -39,7 +39,7 @@ const RestroCard = (props) =>{
             />
             <h3>{name}</h3>
             <h4>₹{costForTwo / 100} FOR TWO</h4>
-            <h4>{cuisines.join(',')}</h4>
+            <h4>{cuisines.join(', ')}</h4>
             <h4>{deliveryTime} minutes</h4>
             <h4>{avgRating} stars</h4>
         </div>
@@ -1870,9 +1870,9 @@ const Body = () =>{
         <div className='body'>
             <div className='search'>Search</div>
             <div className='res-container'>
-               {restData.map((rest) =>(
+               {restList.map((rest) =>(
 
-                <RestroCard key={restList.data.id} restData={rest} />
+                <RestroCard key={rest.data.id} restData={rest} />
                ))} 
                 
                               
