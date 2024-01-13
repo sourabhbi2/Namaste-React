@@ -24,7 +24,7 @@ const Body = () => {
 
         const json = await data.json();
 
-        console.log(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        // console.log(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
 
         // Optional Chaining 
          setRestaurantList(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
@@ -64,7 +64,7 @@ const Body = () => {
                     onClick={() => {
                         const filteredRating = restaurantList.filter((res) => res?.info.avgRating >= 4);
                         setRestaurantList(filteredRating);
-                        console.log(filteredRating);
+                        // console.log(filteredRating);
                     }}
                 >Top Rated Restaurant</button>
             </div>
