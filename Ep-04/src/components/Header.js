@@ -20,7 +20,7 @@ const Header = () => {
     return (
         <div className="header">
             <div className='logo-container'>
-                <img src= {CDN_img_logo} alt='FoodLogo'/>
+                <img src={CDN_img_logo} alt='FoodLogo' />
             </div>
             <div className='nav-items'>
                 <ul>
@@ -28,11 +28,11 @@ const Header = () => {
                     <li><Link to='/about'>About us</Link></li>
                     <li><Link to='/contact'>Contact us</Link></li>
                     <li>Cart</li>
-                  <li><button className='btn-login' onClick={() => {
-                  btnName === "LogIn" ? setBtnName('LogOut') : setBtnName('LogIn');
-                  }}>{btnName}</button></li>
+                    <li><button className='btn-login' onClick={() => {
+                        btnName === "LogIn" ? setBtnName('LogOut') : setBtnName('LogIn');
+                    }}>{btnName}</button></li>
                 </ul>
-                
+
             </div>
         </div>
     )
