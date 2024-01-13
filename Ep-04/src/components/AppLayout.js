@@ -13,7 +13,7 @@ const AppLayout = () => {
   return (
     <div className='app'>
       <Header />
-      <Outlet /> //Outlet route the children path to the AppLayout.
+      <Outlet /> {/*Outlet route the children path to the AppLayout.*/}
     </div>
   )
 }
