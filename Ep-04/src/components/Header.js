@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { CDN_img_logo } from '../utils/constants';
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,9 +13,9 @@ const Header = () => {
     // if dependency [] is empty = [] => useEffect called on initial render(just once)
     // if dependency array is [btnName] => useEffect called everytime when btnName updated 
 
-    useEffect(() => {
-        // console.log('useEffect called');
-    }, [])
+    // useEffect(() => {
+    //     // console.log('useEffect called');
+    // }, [])
 
     return (
         <div className="header">
@@ -23,9 +24,9 @@ const Header = () => {
             </div>
             <div className='nav-items'>
                 <ul>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Contact us</li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/about'>About us</Link></li>
+                    <li><Link to='/contact'>Contact us</Link></li>
                     <li>Cart</li>
                   <li><button className='btn-login' onClick={() => {
                   btnName === "LogIn" ? setBtnName('LogOut') : setBtnName('LogIn');
