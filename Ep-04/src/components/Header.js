@@ -1,10 +1,20 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { CDN_img_logo } from '../utils/constants';
 
 
 
 const Header = () => {
     const [btnName, setBtnName] = useState("LogIn")
+
+    // console.log('Header rendered');
+
+    // if no dependency [] => useEffect called every time .
+    // if dependency [] is empty = [] => useEffect called on initial render(just once)
+    // if dependency array is [btnName] => useEffect called everytime when btnName updated 
+
+    useEffect(() => {
+        // console.log('useEffect called');
+    }, [])
 
     return (
         <div className="header">
